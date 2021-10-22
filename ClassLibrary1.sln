@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1.Test", "ClassLibrary1.Test\ClassLibrary1.Test.csproj", "{32533ED8-8E34-4623-9C9F-151194DA30D6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MS SQL Server Script", "MS SQL Server Script", "{A24ED056-CD8B-4A0B-8B8F-5512D49DDEC4}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\SQLQueryMindBox.sql = ..\..\..\Desktop\SQLQueryMindBox.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
