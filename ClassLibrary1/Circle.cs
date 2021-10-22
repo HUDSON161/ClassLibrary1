@@ -11,20 +11,11 @@ namespace ClassLibrary1
         private double Radius;//радиус
         public Circle(double Radius)//параметрический конструктор
         {
-            try
+            if (Radius > 0)//понятно что радиус всегда положителен
             {
-                if (Radius > 0)//понятно что радиус всегда положителен
-                {
-                    this.Radius = Radius;
-                }
-                else throw new NotImplementedException();//не дадим ввести некорректные значения
+                this.Radius = Radius;
             }
-            catch (NotImplementedException ex)
-            {
-                Console.WriteLine("Радиус должен быть положительным");
-                throw new NotImplementedException();
-            }
-            
+            else throw new NotImplementedException();//не дадим ввести некорректные значения
         }
         public override double CalculateArea() { return Math.PI * Math.Pow(Radius, 2.0); }//вычислим площадь круга
     }

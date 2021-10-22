@@ -7,7 +7,7 @@ namespace ClassLibrary1.Test
     public class TestCircle
     {
         [Fact]
-        public void Circle_Constructor()//проверяем конструктор
+        public void Circle_ConstructorCorrectRadius()//проверим ввели ли мы положительный радиус ( если да то круг будет создан )
         {
             //arrange
             double Radius = 1.0;//радиус
@@ -18,6 +18,20 @@ namespace ClassLibrary1.Test
             //Assert
             var ex = Record.Exception(testCode);
             Assert.Null(ex);
+        }
+
+        [Fact]
+        public void Circle_ConstructorIncorrectRadius()//( специально введем отрицательное число ) проверим защиту от ошибок
+        {
+            //arrange
+            double Radius = -1.0;//радиус
+
+            //act
+            Action testCode = () => { Root TestCircle = new Circle(Radius); };
+
+            //Assert
+            var ex = Record.Exception(testCode);
+            Assert.NotNull(ex);
         }
 
         [Fact]
