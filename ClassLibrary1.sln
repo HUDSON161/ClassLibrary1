@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{691B146F-C8EB-4BF5-B864-B0747D741923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1.Test", "ClassLibrary1.Test\ClassLibrary1.Test.csproj", "{32533ED8-8E34-4623-9C9F-151194DA30D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1.Test", "ClassLibrary1.Test\ClassLibrary1.Test.csproj", "{32533ED8-8E34-4623-9C9F-151194DA30D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MS SQL Server Script", "MS SQL Server Script", "{A24ED056-CD8B-4A0B-8B8F-5512D49DDEC4}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SQLQueryMindBox.sql = ..\..\..\Desktop\SQLQueryMindBox.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
